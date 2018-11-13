@@ -31,7 +31,7 @@ The database includes three tables:
 
 + The authors table includes information about the authors of articles `\d authors`
 + The articles table includes the articles themselves `\d articles`
-+ The log table includes one entry for each time a user has accessed the site `\log`
++ The log table includes one entry for each time a user has accessed the site `\d log`
 
 ### Views
 In order for the Python code to run, create the following views in the news database.
@@ -70,7 +70,7 @@ order by daily_errors.day desc;
 ```
 
 ## Style Guide
-The [Pep8](https://www.python.org/dev/peps/pep-0008/) style guide was used. To check the code's adherence to this standard you can run [pycodestyle](https://pypi.org/project/pycodestyle/) on Linux with `$ pycodestyle logs.py`
+The [Pep8](https://www.python.org/dev/peps/pep-0008/) style guide is used. To check the code's adherence to this standard you can run [pycodestyle](https://pypi.org/project/pycodestyle/) on Linux with `$ pycodestyle logs.py`
 
 
 
