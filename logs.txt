@@ -1,0 +1,11 @@
+The three most popular articles...
+Title: Candidate is jerk, alleges rival, Article views: 338647
+Title: Bears love berries, alleges bear, Article views: 253801
+Title: Bad things gone, say good people, Article views: 170098
+The most popular authors...
+Author: Ursula La Multa, Total views: 507594
+Author: Rudolf von Treppenwitz, Total views: 423457
+Author: Anonymous Contributor, Total views: 170098
+Author: Markoff Chaney, Total views: 84557
+Big error days...
+Date: 2016-07-17, Error rate: 2.26%
