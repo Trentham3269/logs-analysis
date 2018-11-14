@@ -6,10 +6,8 @@ import psycopg2
 dbname = "news"
 
 # Connect to database
-try:
+if __name__ == "__main__":
     db = psycopg2.connect(database=dbname)
-except:
-    print("Unable to connect to the database")
 
 
 # Three most popular articles of all time
