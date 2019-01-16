@@ -5,10 +5,6 @@ import psycopg2
 # Connection string
 dbname = "news"
 
-# Connect to database
-if __name__ == "__main__":
-    db = psycopg2.connect(database=dbname)
-
 
 # Three most popular articles of all time
 def get_articles():
@@ -22,9 +18,6 @@ def get_articles():
     print("The three most popular articles...")
     for a in articles:
         print('Title: {0}, Article views: {1}'.format(a[0], a[1]))
-
-
-get_articles()
 
 
 # Most popular authors of all time
@@ -43,9 +36,6 @@ def get_authors():
         print('Author: {0}, Total views: {1}'.format(a[0], a[1]))
 
 
-get_authors()
-
-
 # Days in which more than 1% of requests were errors
 def get_errors():
     sql = '''
@@ -61,7 +51,12 @@ def get_errors():
         print('Date: {0}, Error rate: {1}%'.format(e[0], e[1]))
 
 
-get_errors()
+# Connect to database
+if __name__ == "__main__":
+    db = psycopg2.connect(database=dbname)
+    get_articles()
+    get_authors()
+    get_errors()
 
 
 # Disconnect from database
